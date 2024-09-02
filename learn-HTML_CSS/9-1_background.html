@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 절대 태그 하나 하나 일일히 강제로 외우기 금지. 자연스럽게 외우게 됨-->
+    <meta charset="UTF-8" />
+    <!-- 다시 말하지만 현업들도 검색해서 세팅함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      .red {
+        background-color: red;
+        background-position: center;
+        text-align: center;
+        color: white;
+        width: 200px;
+        height: 120px;
+      }
+      .img {
+        background-image: url('../assets/images/고죠 영역전개.jpg');
+        background-position: center;
+        width: 1800px;
+        height: 1000px;
+        border: 2px solid black;
+        display: inline-block;
+        overflow: scroll;
+      }
+      .img-scroll {
+        display: inline-block;
+        overflow: scroll; /* 자주 씀 */
+      }
+      .back-size {
+        width: 400px;
+        height: 500px;
+        background-image: url('../assets/images/gri.jpg');
+        background-repeat: no-repeat; /* 반복 금지 태그 */
+        background-position: center;
+        /* background-size: contain; */
+        background-size: cover; /* 이걸 가장 자주 씀 */
+        /* background-size: auto; */
+        border: 2px solid black;
+      }
+      /* lorem * n 번하면 무의미한 문장이 n번 나옴 */
+      .linear {
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        background: linear-gradient(to right, red, blue, yellow);
+      }
+      .linear-radial {
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        background: radial-gradient(white, yellow, red);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"><b>Supreme</b></div>
+    <h3>background-img</h3>
+    <div class="img"></div>
+    <div class="img-scroll">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sed
+      fugit cumque assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero? Lorem ipsum,
+      dolor sit amet consectetur adipisicing elit. Quisquam sed fugit cumque
+      assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero?
+    </div>
+    <div class="img-scroll">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sed
+      fugit cumque assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero? Lorem ipsum,
+      dolor sit amet consectetur adipisicing elit. Quisquam sed fugit cumque
+      assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero?
+    </div>
+    <div class="img-scroll">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sed
+      fugit cumque assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero? Lorem ipsum,
+      dolor sit amet consectetur adipisicing elit. Quisquam sed fugit cumque
+      assumenda accusamus vel voluptatem officiis odit, temporibus
+      exercitationem consequuntur ullam deserunt enim hic porro totam incidunt
+      minus et? Ipsam ex necessitatibus, itaque veniam ratione debitis labore
+      expedita sunt tempora assumenda quas distinctio corporis, explicabo omnis
+      eligendi autem recusandae placeat enim earum. Doloremque minima blanditiis
+      voluptas sapiente consectetur amet? Neque reiciendis earum deserunt
+      molestiae eveniet vero aperiam ipsa eum? Veniam ratione eaque dolore
+      nulla. Dolorem, autem distinctio reiciendis earum laudantium, soluta
+      aspernatur natus odit ex magnam iste reprehenderit vero?
+    </div>
+    <h3 style="color: brown">back</h3>
+    <div class="back-size"></div>
+    <h3>linear</h3>
+    <div class="linear"></div>
+    <h3>linear-radial</h3>
+    <div class="linear-radial"></div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .flex-contanier {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+      }
+      .flex-item {
+        color: white;
+        width: 80px;
+        height: 80px;
+        background-color: plum;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid yellow;
+      }
+      .item1 {
+        /*order: 0;*/
+        flex-grow: 2;
+        flex-shrink: 2;
+        flex-basis: 50%;
+      }
+      .item2 {
+        /*order: 3;*/
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+      .item3 {
+        /*order: 1;*/
+        flex-grow: 1;
+        flex-shrink: 2;
+        flex-basis: 20vw;
+      }
+      .item4 {
+        /*order: 2;*/
+        flex-grow: 1;
+        flex-shrink: 2;
+        align-self: flex-end;
+      }
+      .item5 {
+        /*order: 4;*/
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+      /* 현업에서는 order 진짜 거의 안씀. */
+    </style>
+  </head>
+  <body>
+    <div class="flex-contanier">
+      <div class="flex-item item1">1</div>
+      <div class="flex-item item2">2</div>
+      <div class="flex-item item3">3</div>
+      <div class="flex-item item4">4</div>
+      <div class="flex-item item5">5</div>
+    </div>
+  </body>
+</html>

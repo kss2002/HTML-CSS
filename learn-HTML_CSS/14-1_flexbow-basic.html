@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+      .flex-contanier {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*justify-content: center; /* justify는 자주 씀 > 가로 정렬 */
+        /*align-content: center; /* 세로 정렬 */
+        align-items: flex-end;
+      }
+      .flex-item {
+        color: white;
+        width: 80px;
+        height: 80px;
+        background-color: plum;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-contanier">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
+  </body>
+</html>

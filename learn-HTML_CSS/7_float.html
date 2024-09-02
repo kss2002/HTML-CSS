@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      img {
+        width: 300px;
+        border: 3px solid green;
+      }
+      .imgs {
+        float: left; /* float이란 "둥둥 뜨다"라는 뜻임. */
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      .imgs-right {
+        float: right; /* float은 잘 안쓰임. */
+      }
+      p {
+        border: 3px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        class="imgs"
+        src="assets/images/고죠 영역전개.jpg"
+        alt="고죠 모름?"
+      />
+      <p>고죠의 영역전개 <b>무량공처</b></p>
+      <img class="imgs-right" src="assets/images/gri.jpg" alt="아쉽네요.." />
+      <p>응애</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box</title>
+    <style>
+      div.content {
+        background-color: bisque;
+        width: 100px; /*가로*/
+        height: 200px; /*세로*/
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        padding: 30px;
+      }
+      div.padding {
+        border: 1px solid blue;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 40px; /* 마진은 "중첩" 된다. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">hello</div>
+    <span>hello world!</span>
+    <div class="padding">안녕하세요 반갑습니다</div>
+  </body>
+</html>

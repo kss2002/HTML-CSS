@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>element</title>
+    <style>
+      a {
+        /* 클래스는 ".* 확장자를 씀*/
+        font-size: 30px;
+      }
+      a:link {
+        color: cyan;
+      }
+      a:visited {
+        color: brown;
+      }
+      a:hover {
+        color: blue;
+      }
+      fieldset:hover {
+        background-color: rgb(207, 222, 214);
+      }
+      a:active {
+        color: yellow;
+      }
+      .fied {
+        margin-bottom: 10px;
+      }
+      input:focus {
+        outline: none;
+        border: 3px solid red;
+      }
+      li:nth-child(even) {
+        /* 짝수 */
+        background-color: aqua;
+      }
+      li:nth-child(odd) {
+        /* 홀수 */
+        background-color: blanchedalmond;
+      }
+
+      /* 가상 요소 */
+      .req::before {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 5;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 200px;
+        left: 60px;
+        padding: 10px;
+      }
+      .letter::first-letter {
+        font-size: 60px;
+        color: brown;
+      }
+      .line::first-line {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>element</legend>
+      <div>
+        <a href="https://www.naver.com/" target="_blank">네이버</a>
+        <a href="https://www.kakao.com/" target="_blank">카카오</a>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>focus, before, after</legend>
+      <div class="fied">
+        <label class="req" for="name">이름</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="fied">
+        <label class="req" for="age">나이</label>
+        <input type="text" id="age" />
+      </div>
+      <button data-tooltip="이 버튼을 클릭하여 정보를 보냄.">
+        <b>보내기</b>
+      </button>
+    </fieldset>
+
+    <fieldset>
+      <legend>nth-chlid, not</legend>
+      <ul>
+        <li>1content</li>
+        <li>2content</li>
+        <li>3content</li>
+        <li>4content</li>
+        <li>5content</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>first-letter , first-line , setton</legend>
+      <div>
+        <p class="letter">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          blanditiis rerum officiis repellat id dicta? Rem at optio consequatur
+          officiis ullam maiores est cupiditate sunt deleniti quos. Ex, odio
+          itaque? Id corporis accusantium fuga eum non earum molestiae et nihil
+          maiores, veritatis expedita laboriosam in accusamus omnis voluptas
+          ratione quo odio dolore natus blanditiis. Repellendus consectetur
+          natus non! Cum, veniam. Architecto doloremque ad nihil velit at
+          aspernatur, doloribus officiis nisi vel consectetur earum natus quod
+          tempore? Doloremque error cum, harum dolorem saepe, officiis
+          perspiciatis illum odit, labore aut suscipit! Natus?
+        </p>
+        <p class="line">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          blanditiis rerum officiis repellat id dicta? Rem at optio consequatur
+          officiis ullam maiores est cupiditate sunt deleniti quos. Ex, odio
+          itaque? Id corporis accusantium fuga eum non earum molestiae et nihil
+          maiores, veritatis expedita laboriosam in accusamus omnis voluptas
+          ratione quo odio dolore natus blanditiis. Repellendus consectetur
+          natus non! Cum, veniam. Architecto doloremque ad nihil velit at
+          aspernatur, doloribus officiis nisi vel consectetur earum natus quod
+          tempore? Doloremque error cum, harum dolorem saepe, officiis
+          perspiciatis illum odit, labore aut suscipit! Natus?
+        </p>
+      </div>
+    </fieldset>
+  </body>
+</html>

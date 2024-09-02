@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      #movies {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #movies td,
+      th {
+        border: 2px solid #000000;
+        padding: 10px;
+      }
+
+      #movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #03c75a;
+        color: white;
+      }
+      /* hover , nth-child() < 고급 선택자 */
+      #movies tr:nth-child(even) {
+        background-color: rgba(149, 147, 147, 0.91);
+      }
+      #movies tr:hover {
+        background-color: rgb(206, 218, 208);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="movies">
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+      <tr>
+        <td>블랙핑크 더 무비</td>
+        <td>118분</td>
+        <td>2021.07.12 개봉</td>
+      </tr>
+      <tr>
+        <td>정글 크루즈</td>
+        <td>127분</td>
+        <td>2021.06.30 개봉</td>
+      </tr>
+      <tr>
+        <td>블랙 위도우</td>
+        <td>121분</td>
+        <td>2021.07.18 개봉</td>
+      </tr>
+      <tr>
+        <td>모가디슈</td>
+        <td>133분</td>
+        <td>2021.08.02 개봉</td>
+      </tr>
+      <tr>
+        <td>보스 베이비2</td>
+        <td>105분</td>
+        <td>2021.07.28 개봉</td>
+      </tr>
+      <tr>
+        <td>엔드게임</td>
+        <td>138분</td>
+        <td>2021.08.17 개봉</td>
+      </tr>
+      <tr>
+        <td>하루만 살자</td>
+        <td>101분</td>
+        <td>2021.08.07 개봉</td>
+      </tr>
+    </table>
+  </body>
+</html>
+<!-- table(표) 태그로 태그들은 하나로 묶고 id를 준 다음. id 전체에 css를 입힐 수 있음-->

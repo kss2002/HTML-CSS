@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RadiocheekBox</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>좋아하는 색상을 모두 선택해주세요.</legend>
+      </fieldset>
+      <ul>
+        <li>
+          <label for="red">빨강</label>
+          <input type="checkbox" id="red" value="red" />
+        </li>
+        <li>
+          <label for="orange">주황</label>
+          <input type="checkbox" id="orange" value="orange" />
+        </li>
+        <li>
+          <label for="yellow">노랑</label>
+          <input type="checkbox" id="yellow" value="yellow" />
+        </li>
+        <li>
+          <label for="green">초록</label>
+          <input type="checkbox" id="green" value="green" />
+        </li>
+      </ul>
+      <fieldset>배송방법은?</fieldset>
+      <ul>
+        <li>
+          <label for="free">무료</label>
+          <input type="radio" name="del" id="free" value="free" />
+        </li>
+        <li>
+          <label for="pay">유료</label>
+          <input type="radio" name="del" id="pay" value="pay" />
+        </li>
+      </ul>
+    </form>
+    <fieldset>
+      <legend>자기소개서</legend>
+      <textarea name="" id="" cols="60" rows="10">
+자기 자신을 소개해보세요!</textarea
+      >
+    </fieldset>
+    <fieldset>
+      <legend>주문 상품을 선택해주세요</legend>
+      <ul>
+        <li>
+          <select name="gooth" id="gooth">
+            <option value="apple_10kg">사과 10kg</option>
+            <option value="apple_20kg">사과 20kg</option>
+            <option value="apple_30kg">사과 30kg</option>
+            <option value="apple_40kg">사과 40kg</option>
+          </select>
+        </li>
+        <li>
+          <label for="ice-cream-choice">맛을 선택하세요</label>
+          <input
+            list="ice-cream-flavors"
+            id="ice-cream-choice"
+            name="ice-cream-choice"
+          />
+          <datalist id="ice-cream-flavors">
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+          </datalist>
+        </li>
+      </ul>
+    </fieldset>
+    <button>제출하기</button>
+    <button type="reset">리셋</button>
+    <button type="button" onclick="alert('코딩 ㅈㄴ 힘드네')">
+      이거 눌러보셈 버튼
+    </button>
+  </body>
+</html>
